@@ -15,9 +15,14 @@ int main(void)
 	int i;
 
 	i = 0;
-	while (lc[i] != '\0' && uc[i] != '\0')
+	while (lc[i] != '\0')
 	{
 		putchar(lc[i]);
+		i++;
+	}
+	i = 0;
+	while (uc[i] != '\0')
+	{
 		putchar(uc[i]);
 		i++;
 	}
