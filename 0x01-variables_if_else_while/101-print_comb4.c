@@ -8,18 +8,16 @@
 
 int main(void)
 {
-	int i, j, k, l, m, n, o;
+	int i, j, k, l, n, o;
 
-	i = 0;
-	j = 1;
 	k = 2;
+	j = 1;
 	l = 0;
-	m = 0;
 	n = 1;
 	o = 0;
-	while (i < 8)
+	for (i = 0; i < 8; i++)
 	{
-		while (j < 9)
+		for (; j < 9; j++)
 		{
 			while (k < 10)
 			{
@@ -27,14 +25,15 @@ int main(void)
 				putchar('0' + j);
 				putchar('0' + k);
 				if (i != 7)
+				{
 					putchar(',');
 					putchar(' ');
+				}
 				k++;
 			}
 			l++;
 			k = 2;
 			k += l;
-			j++;
 		}
 		l = 0;
 		l++;
@@ -44,7 +43,6 @@ int main(void)
 		k += l;
 		j = o;
 		j += l;
-		i++;
 	}
 	putchar('\n');
 	return (0);
