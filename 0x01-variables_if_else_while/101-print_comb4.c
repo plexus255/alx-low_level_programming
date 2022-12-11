@@ -11,11 +11,12 @@ int main(void)
 	int i, j, k, l, n, o;
 
 	k = 2;
+	i = 0;
 	j = 1;
 	l = 0;
 	n = 1;
 	o = 0;
-	for (i = 0; i < 8; i++)
+	for (; i < 8; i++)
 	{
 		for (; j < 9; j++)
 		{
