@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - takes input
@@ -16,7 +17,7 @@ void print_to_98(int n)
 	{
 		while (c > 99)
 		{
-			_putchar('0' + c);
+			printf("%d", c);
 			if (c != 98)
 			{
 				_putchar(',');
@@ -29,7 +30,7 @@ void print_to_98(int n)
 	{
 		while (c < 99)
 		{
-			_putchar('0' + c);
+			printf("%d", c);
 			if (c != 98)
 			{
 				_putchar(',');
@@ -40,7 +41,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		_putchar('0' + c);
+		printf("%d", c);
 	}
 	_putchar('\n');
 }
