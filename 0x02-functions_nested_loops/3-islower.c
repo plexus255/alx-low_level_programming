@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _islower - take input
- * Description: check for lower char
+ * _islower - take int c as input
+ * Description: check if int c islower or not
+ * @c: is an integer data type to be check for
  * Return: 1 if yes and 0 if otherwise
  */
 
