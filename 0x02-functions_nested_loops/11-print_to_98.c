@@ -20,8 +20,8 @@ void print_to_98(int n)
 			printf("%d", c);
 			if (c != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(",");
+				printf(" ");
 			}
 			c--;
 		}
@@ -33,8 +33,8 @@ void print_to_98(int n)
 			printf("%d", c);
 			if (c != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(",");
+				printf(" ");
 			}
 			c++;
 		}
@@ -43,6 +43,6 @@ void print_to_98(int n)
 	{
 		printf("%d", c);
 	}
-	_putchar('\n');
+	printf("\n");
 }
 
