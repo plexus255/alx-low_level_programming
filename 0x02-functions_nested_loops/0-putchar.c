@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - take no arg.
@@ -12,9 +12,9 @@ int main(void)
 
 	for (int i = 0; s[i] != '\0'; i++)
 	{
-		putchar(s[i]);
+		_putchar(s[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
 
