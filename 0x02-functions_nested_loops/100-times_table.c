@@ -9,7 +9,7 @@
 
 void print_times_table(int n)
 {
-	int i, j, k, pro;
+	int i, j, pro;
 
 	if (n <= 0 && n <= 14)
 	{
@@ -19,8 +19,8 @@ void print_times_table(int n)
 			{
 				pro = i * j;
 				if (pro > 9)
-				{	
-					_putchar(',');
+				{
+					_putchar(',');	
 					_putchar(' ');
 					_putchar(' ');
 					_putchar('0' + pro / 10);
