@@ -9,7 +9,7 @@
 
 void print_times_table(int n)
 {
-	int i, j, k, pro, m;
+	int i, j, k, pro;
 	
 	k = n + 1;
 	for (i = 0; i < k; i++)
