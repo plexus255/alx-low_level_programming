@@ -12,6 +12,7 @@ for (r = 0; r < 10; r++)
 		{
 			putchar('0' + d / 10);
 			putchar('0' + d % 10);
+			putchar(' ');
 		}
 		else
 		{
@@ -22,7 +23,6 @@ for (r = 0; r < 10; r++)
 		while ( m ==0 && w != 9)
 		{
 			putchar(',');
-			putchar(' ');
 			putchar(' ');
 			m++;
 		}
