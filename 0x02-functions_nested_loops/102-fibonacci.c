@@ -22,7 +22,12 @@ int main(void)
 	{
 		k += j;
 		j = k - j;
-		printf("%ld, ", k);
+		printf("%ld", k);
+		if (m < 46)
+		{
+			printf(",");
+			printf(" ");
+		}
 		m++;
 	}
 	printf("\n");
