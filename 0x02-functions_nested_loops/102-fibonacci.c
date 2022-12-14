@@ -21,6 +21,10 @@ int main(void)
 		k += j;
 		j = k - j;
 		printf("%d, ", k);
+		if (k < 0)
+			k = k * -1;
+		if (j < 0)
+			j = j * -1;
 		m++;
 	}
 	printf("\n");
