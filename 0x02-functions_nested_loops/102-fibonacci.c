@@ -8,23 +8,21 @@
 
 int main(void)
 {
-	int i, j, k, m;
+	long i, j, k;
+
+	int m;
 
 	i = 1;
 	j = 2;
 	k = i + j;
-	printf("%d, ", i);
-	printf("%d, ", j);
-	printf("%d, ", k);
+	printf("%ld, ", i);
+	printf("%ld, ", j);
+	printf("%ld, ", k);
 	while (m < 47)
 	{
 		k += j;
 		j = k - j;
-		printf("%d, ", k);
-		if (k < 0)
-			k = k * -1;
-		if (j < 0)
-			j = j * -1;
+		printf("%ld, ", k);
 		m++;
 	}
 	printf("\n");
