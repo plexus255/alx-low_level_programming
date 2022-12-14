@@ -19,34 +19,30 @@ void print_times_table(int n)
 			pro = i * j;
 			if (pro > 9)
 			{
-				_putchar('0' + pro / 10);
-				_putchar('0' + pro % 10);
-				if ( i < n && j < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-			}
-			else if (pro > 99)
-			{
-				m = pro / 10;
-				_putchar('0' + pro / 100);
-				_putchar('0' + m % 10);
-				_putchar('0' + pro % 10);
-				if (i < n && j < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-			else
-			{
-				_putchar('0' + pro);
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar('0' + pro / 10);
+				_putchar('0' + pro % 10);
+			}
+			else if (pro > 99)
+			{
+				_putchar(',');
 				_putchar(' ');
+				_putchar('0' + pro / 100);
+				_putchar('0' + ((pro / 10) % 10));
+				_putchar('0' + pro % 10);
+			}
+			else
+			{
+				if (j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar('0' + pro);
 			}
 		}
 		_putchar('\n');
