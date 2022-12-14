@@ -12,11 +12,11 @@ for (r = 0; r < 10; r++)
 		{
 			putchar('0' + d / 10);
 			putchar('0' + d % 10);
-			putchar(' ');
 		}
 		else
 		{
 			putchar('0' + d);
+			putchar(' ');
 		}
 		int m;
 
