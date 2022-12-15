@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - take no arg
+ * main - take arg
  * Description: working with putchar
  * Return: 0
  */
