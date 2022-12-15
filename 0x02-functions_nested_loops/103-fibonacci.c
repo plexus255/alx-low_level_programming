@@ -8,25 +8,26 @@
 
 int main(void)
 {
-	long i, j, k, l;
+	int i, j, k, l;
 
 	int m;
 
 	i = 1;
 	j = 2;
 	k = i + j;
-	l = 0;
-	while (m < 50)
+	l = 2;
+	m = 0;
+	while (m < 4000000)
 	{
 		k += j;
 		j = k - j;
-		if ((k % 2 == 0) && (k < 4000000))
+		if (k % 2 == 0)
 		{
 			l += k;
 		}
 		m++;
 	}
-	printf("%ld\n", l);
+	printf("%d\n", l);
 	return (0);
 }
 
