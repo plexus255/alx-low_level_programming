@@ -20,9 +20,9 @@ int main(void)
 
 
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    str = "0123456789";
 
-    print_rev(str);
+    puts2(str);
 
     return (0);
 
