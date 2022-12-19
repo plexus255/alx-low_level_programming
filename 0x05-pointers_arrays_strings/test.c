@@ -6,7 +6,7 @@
 
 /**
 
- * main - check the code 
+ * main - check the code
 
  *
 
@@ -18,17 +18,21 @@ int main(void)
 
 {
 
-    int n;
+    int a;
+
+    int b;
 
 
 
-    n = 402;
+    a = 98;
 
-    printf("n=%d\n", n);
+    b = 42;
 
-    reset_to_98(&n);
+    printf("a=%d, b=%d\n", a, b);
 
-    printf("n=%d\n", n);
+    swap_int(&a, &b);
+
+    printf("a=%d, b=%d\n", a, b);
 
     return (0);
 
