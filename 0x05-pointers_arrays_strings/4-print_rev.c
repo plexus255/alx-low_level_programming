@@ -2,7 +2,8 @@
 
 /**
  * _print_rev - take pointers
- * Description: function that prints a string, in reverse, followed by a new line.
+ * Description: function that prints a string,
+ * in reverse, followed by a new line.
  * @s: A pointer parameter format
  * Return: void
  */
