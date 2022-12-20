@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - take pointers
+ * rev_string - take pointers
  * Description: function that reverse  a string.
  * @s: A pointer parameter format
  * Return: void
@@ -9,8 +9,7 @@
 
 void rev_string(char *s)
 {
-	int i, j;
-	char *rev;
+	int k, i, j, tmp;
 
 	i = 0;
 	j = 0;
@@ -18,15 +17,13 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	i = i - 1;
-
-	while (i >= 0)
+	k = i / 2;
+	while (j < k)
 	{
-		rev[j] = s[i];
-		i--;
+		tmp = s[j];
+		s[j] = s[i - (j + 1)];
+		s[i - (j + 1)] = tmp;
 		j++;
 	}
-	*s = *rev;
-	
 }
 
