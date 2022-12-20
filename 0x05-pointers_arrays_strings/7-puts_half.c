@@ -2,29 +2,27 @@
 
 /**
  * puts_half - take pointers
- * Description: a function that prints every other character of a
- * string, starting with the first character, followed by a new line.
+ * Description: function that prints half of a string, followed by a new line.
  * @str: A pointer parameter format
  * Return: void
  */
 
 void puts_half(char *str)
 {
-	int i, j, k;
+	int i, j;
 
 	i = 0;
-	j = 0;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	k = i / 2;
-	if ( i % 2 == 0)
+	j = i / 2;
+	if (i % 2 == 0)
 	{
-		while (k < i)
+		while (j < i)
 		{
-			_putchar(str[k]);
-			k++;
+			_putchar(str[j]);
+			j++;
 		}
 	}
 	else
