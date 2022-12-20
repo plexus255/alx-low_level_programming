@@ -3,9 +3,8 @@
 
 /**
  * print_array - take array and its length as input
- * Description: function that prints n elements 
- * of an array of integers, followed by a new line
- * @a: pointer 
+ * Description: function that prints n elements of an array of integers
+ * @a: pointer
  * @n: array lenght
  * Return: void
  */
@@ -27,7 +26,7 @@ void print_array(int *a, int n)
 				printf("%d\n", a[i]);
 			}
 			else
-			{		
+			{
 				printf("%d, ", a[i]);
 			}
 		}
