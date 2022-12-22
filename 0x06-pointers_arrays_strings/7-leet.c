@@ -3,7 +3,7 @@
 /**
  * leet - take address
  * Description: a function that encodes a string into 1337.
- * @str: pointer
+ * @ptr: pointer
  * Return: pointer
  */
 
