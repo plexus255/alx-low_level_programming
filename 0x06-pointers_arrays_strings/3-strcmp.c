@@ -10,7 +10,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, k;
+	int i, j, k, m;
 
 	i = 0;
 	j = 0;
@@ -34,7 +34,8 @@ int _strcmp(char *s1, char *s2)
 		k++;
 	}
 	if (k == i && k == j)
-		return (0);
+		m = 0;
+	return (m);
 }
 
 
