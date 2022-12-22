@@ -5,7 +5,7 @@
  * Description: a function that compares two strings
  * @s1: pointer to first argument
  * @s2: pointer to second arg.
- * Return: integer 
+ * Return: integer
  */
 
 int _strcmp(char *s1, char *s2)
