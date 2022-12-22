@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _string_toupper - take one address as input
+ * string_toupper - take one address as input
  * Description:  a function that convert strings to uppercase
  * @str: pointer agr
  * Return:  pointer
