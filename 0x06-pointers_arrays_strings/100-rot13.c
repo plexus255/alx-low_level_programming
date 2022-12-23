@@ -15,7 +15,7 @@ char *rot13(char *ptr)
 	j = 0;
 	while (ptr[i] != '\0')
 	{
-		while ((j < 26) && ((ptr[i] >= 'A' && ptr[i] <= 'z') || (ptr[i] >= 'a' && ptr[i] <= 'z')))
+		while (j < 26)
 		{
 			if ((ptr[i] >= 'A' && ptr[i] <= 'M') || (ptr[i] >= 'a' && ptr[i] <= 'm'))
 			{
