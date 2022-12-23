@@ -9,10 +9,6 @@
 
 char *rot13(char *ptr)
 {
-	//char upstr[] = "AEOTL";
-	//char lwstr[] = "aeotl";
-	//char leetnum[] = "43071";
-
 	int i, j;
 
 	i = 0;
