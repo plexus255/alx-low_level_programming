@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - take no arg
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;
