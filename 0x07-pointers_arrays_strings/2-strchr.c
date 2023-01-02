@@ -12,10 +12,9 @@ char *_strchr(char *s, char c)
 	int i;
 
 	i = -1;
-	do
-	{
+	do {
 		i++;
-	}while (*(s + i) != c);
+	} while (*(s + i) != c);
 	if (*(s + i) == c)
 	{
 		return (s + i);
