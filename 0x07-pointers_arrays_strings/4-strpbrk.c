@@ -9,42 +9,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, k;
+	int i;
 
-	char *ptr;
-
-	i = 0;
-	j = 0;
-	k = 0;
-	while (*(s + i) != '\0')
+	while (*s)
 	{
-		while (*(accept + j) != '\0')
+		for (i = 0; accept[i] != '\0'; i++)
 		{
-			if ((*(s + i) == *(accept + j)) && (k != 1))
+			if (*s == accept[i])
 			{
-				ptr = (s + i);
-				k++;
-				break;
+				return (s);
 			}
-			j++;
 		}
-		if (k == 1)
-		{
-			break;
-		}
-		else
-		{
-			j = 0;
-			i++;
-		}
+		s++;
 	}
-	if (ptr != NULL)
-	{
-		return (ptr);
-	}
-	else
-	{
-		return ('\0');
-	}
+	return (NULL);
 }
 
