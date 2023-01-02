@@ -38,6 +38,13 @@ char *_strpbrk(char *s, char *accept)
 			i++;
 		}
 	}
-	return (ptr);
+	if (ptr != NULL)
+	{
+		return (ptr);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
 
