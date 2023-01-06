@@ -19,7 +19,10 @@ int main(int argc, char **argv)
 		{
 			if ((atoi(argv[i]) != 0))
 			{
-				j += atoi(argv[i]);
+				if ((atoi(argv[i]) > 0))
+				{
+					j += atoi(argv[i]);
+				}
 			}
 			else
 			{
