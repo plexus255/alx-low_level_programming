@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	int i, j;
 
 	j = 0;
-	if (argc > 1)
+	if (2 > argc)
 	{
 		for (i = 1; i < argc; i++)
 		{
