@@ -3,8 +3,8 @@
 
 /**
  * main - a program that multiplies two numbers type on cm line
- * @argc - argument count
- * @argv - argument vector
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
  */
 
