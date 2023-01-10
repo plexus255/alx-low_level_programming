@@ -15,8 +15,10 @@ char *str_concat(char *s1, char *s2)
 
 	int i, j, l, m, strlen;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	i = strleng(s1);
 	j = strleng(s2);
 	strlen = i + j;
@@ -27,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s1[m] == '\0')
 		{
-			s[m] = ' ';
+			*(s + m) = ' ';
 		}
 		else
 		{
