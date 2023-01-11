@@ -98,8 +98,6 @@ int main(void)
 
     print_grid(grid, 6, 4);
 
-    free_grid(grid, 4);
-
     return (0);
 
 }
