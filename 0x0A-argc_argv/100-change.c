@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "stdlib.h"
+int ret_change(int i);
 
 /**
  * main -  prints the minimum number of coins to make change
@@ -17,38 +18,52 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	cents = atoi(argv[argc]);
+	cents = atoi(argv[argc - 1]);
 	if (cents < 0)
 	{
 		printf("%d\n", 0);
 		return (0);
 	}
-	changes = 0;
-	while (cents >= 25)
-	{
-		cents = cents - 25;
-		changes++;
-	}
-	while (cents >= 10 && cents < 25)
-	{
-		cents = cents - 10;
-		changes++;
-	}
-	while (cents >= 5 && cents < 10)
-	{
-		cents = cents - 5;
-		changes++;
-	}
-	while (cents >= 2 &&  cents < 5)
-	{
-		cents = cents - 2;
-		changes++;
-	}
-	while (cents >= 1 && cents < 2)
-	{
-		cents = cents - 1;
-		changes++;
-	}
+	changes = ret_change(cents);
 	printf("%d\n", changes);
 	return (0);
+}
+
+/**
+ * ret_change - return user changes in cents of 25,10,5,2,1.
+ * @i: user money
+ * Return: changes
+ */
+
+int ret_change(int i)
+{
+	int changes;
+
+	changes = 0;
+	while (i >= 25)
+	{
+		i -= 25;
+		changes++;
+	}
+	while (i >= 10 && i < 25)
+	{
+		i -= 10;
+		changes++;
+	}
+	while (i >= 5 && i < 10)
+	{
+		i -= 5;
+		changes++;
+	}
+	while (i >= 2 && i < 5)
+	{
+		i -= 2;
+		changes++;
+	}
+	while (i > 0 && i < 2)
+	{
+		i -= 1;
+		changes++;
+	}
+	return (changes);
 }
