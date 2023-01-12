@@ -47,6 +47,6 @@ char *argstostr(int ac, char **av)
 		mem_count++;
 		av++;
 	}
-	c[mem_count] = **(av - 1) ;
+	c[mem_count] = '\0';
 	return (c);
 }
