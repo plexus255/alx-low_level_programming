@@ -30,9 +30,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		j++;
 	}
-	k = i + j;
+	k = i + n;
 	if (n >= j)
 	{
+		k = j + i;
 		ptr = malloc(k + 1);
 			if (ptr == NULL)
 			{
@@ -46,7 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		k = i + n;
 		ptr = malloc(k + 1);
 			if (ptr == NULL)
 			{
