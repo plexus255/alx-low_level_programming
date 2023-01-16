@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct dog - data type for declaring struct variable for dog
+ * struct dog - structure declaration and definition for dog data type
  * @name: data member for describing the dog's name
  * @age: data member for describing the age of the dog
  * @owner: data member for describing the owner of the dog
