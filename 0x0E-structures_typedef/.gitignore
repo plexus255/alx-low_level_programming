@@ -1,0 +1,5 @@
+*automate
+*test.c
+*.swp
+*.swo
+*a.out
